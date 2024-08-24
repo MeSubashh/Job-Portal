@@ -1,0 +1,88 @@
+/* For the title */
+.center-content {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: black;
+}
+
+.center-content h1 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.center-content p {
+  font-size: 20px;
+}
+
+/* For the search */
+.search {
+  margin-top: 20px; /* Adjust as needed */
+  display: flex;
+  flex-direction: row;
+  gap: 10px; /* Add gap between select elements */
+  align-items: center;
+  justify-content: center;
+}
+
+.search select {
+  width: 16rem; /* Equivalent to w-64 */
+  padding: 0.75rem 1rem; /* Equivalent to py-3 pl-4 */
+  background-color: beige; /* Equivalent to bg-zinc-200 */
+  font-weight: 600; /* Equivalent to font-semibold */
+  border-radius: 0.375rem; /* Equivalent to rounded-md */
+  border: none;
+  color: black; /* Text color for the select */
+  appearance: none;
+  cursor: pointer;
+}
+
+.search select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4A90E2; /* Adjust focus style as needed */
+}
+.search button {
+  width: 16rem; /* Equivalent to w-64 */
+  background-color: #4299E1; /* Equivalent to bg-blue-500 */
+  color: black;
+  font-weight: bold;
+  padding: 0.75rem 0; /* Equivalent to py-3 */
+  border-radius: 0.375rem; /* Equivalent to rounded-md */
+  border: none;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #3182CE; /* Darken on hover */
+}
+
+/* Move "Post a job +" button to the left and down */
+.post-job {
+  margin-top: 2rem; /* Adjusted to move it down */
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  width: 100%; /* Take full width */
+}
+
+.post-job button {
+  background-color: #4299E1;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.post-job button:hover {
+  background-color: #3182CE;
+}
+
+.post-job button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4A90E2;
+}
+

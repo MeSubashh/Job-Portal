@@ -1,0 +1,105 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* App.css */
+
+/* Example classes */
+.background-image-1 {
+  /* background-image: url('https://www.signitysolutions.com/hubfs/raw_assets/public/signitysolutions/site-import/images/services/job-portal/banner.png'); */
+  background-image : url('./styles/highFive.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.background-image-2 {
+  background-image: url('https://externlabs.com/blogs/wp-content/uploads/2023/04/New-Project-64.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  width:150 px;
+  height:150 px;
+}
+/* unvisited link */
+a:link {
+  color: #6199fb;
+}
+
+/* visited link */
+a:visited {
+  color: #6199fb;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(28, 0, 128);
+  
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*Pagination*/
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.pagination button {
+  width: 40px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: black;
+  border-color: #eee;
+}
+
+.pagination button.active {
+  font-weight: 900;
+  border-color: #101010;
+  background: #ffe400;
+  color: #101010;
+}

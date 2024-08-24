@@ -1,0 +1,108 @@
+Main job card styles
+.mainJob {
+  margin: 1rem;
+}
+
+.entireJob {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  background-color: #68555579;
+}
+
+.eachJob-left {
+  flex: 1;
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.eachJob-right {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.apply-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+/* Highlighting 'Remote' */
+.highlight {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Job description styles */
+.job-description {
+  white-space: nowrap; /* Prevents text from wrapping */
+  overflow: hidden; /* Hides overflow content */
+  text-overflow: ellipsis; /* Adds ellipsis for overflowed content */
+  max-width: 100%; /* Ensures it stays within the box */
+  display: block; /* Ensures it behaves as a block element */
+}
+
+/* Modal container */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  padding: 2rem;
+  border: 1px solid #888;
+  border-radius: 0.375rem;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  text-align: left;
+  overflow-y: auto; /* Makes the modal scrollable */
+  max-height: 80%; /* Ensures modal content stays within view */
+  word-break: break-word; /* Ensures long words break to fit within the box */
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal description styles */
+.modal-description {
+  white-space: pre-wrap; /* Ensures text stays within the box */
+  overflow: hidden; /* Hides overflow content */
+  text-overflow: ellipsis; /* Adds ellipsis for overflowed content */
+  word-break: break-word; /* Ensures long words break to fit within the box */
+}

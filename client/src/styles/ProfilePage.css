@@ -1,0 +1,52 @@
+.profile-form {
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.section-title {
+  grid-column: span 2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-input {
+  margin-bottom: 10px;
+}
+
+.save-button {
+  grid-column: span 2;
+  align-self: flex-end;
+  margin-top: 20px; /* Ensure this line adds some space above the button */
+}
+
+/* Specific grid placements */
+.profile-form > .profile-input:nth-child(2),
+.profile-form > .profile-input:nth-child(3) {
+  grid-column: span 1;
+}
+
+.profile-form > .profile-input:nth-child(4),
+.profile-form > .profile-input:nth-child(5) {
+  grid-column: span 1;
+}
+
+.profile-form > .profile-input:nth-child(6),
+.profile-form > .profile-input:nth-child(7) {
+  grid-column: span 1;
+}
+
+.profile-form > .profile-input:nth-child(9),
+.profile-form > .profile-input:nth-child(10) {
+  grid-column: span 1;
+}
+
+.profile-form > .profile-input:nth-child(11),
+.profile-form > .profile-input:nth-child(12),
+.profile-form > .profile-input:nth-child(13) {
+  grid-column: span 1;
+}
